@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+    <title>M-Pesa STK Push</title>
+  </head>
+  <body>
+    <div class="container mt-5" style="width: 70%">
+      <h2 style="text-align: center">Lipa na M-Pesa</h2>
+      <form action="/token" method="post">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            name="fullName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Telephone Number:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            name="phone"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="amount"
+            name="amount"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-success">
+          M <i class="fas fa-phone"></i>PESA
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
